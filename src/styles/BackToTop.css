@@ -37,6 +37,8 @@
 .back-to-top svg {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
+
+.back-to-top:hover {
   transform: translateY(-5px);
 }
 

@@ -9,14 +9,12 @@ import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import { ThemeProvider } from './context/ThemeContext';
 import './styles/App.css';
-import { SpeedInsights } from '@vercel/speed-insights-react';
 
 function App() {
   return (
     <ThemeProvider>
       <AnimatePresence mode='wait'>
         <div className="app">
-          <SpeedInsights />
           <Header />
           <motion.main
             initial={{ opacity: 0, y: 20 }}

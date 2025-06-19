@@ -4,6 +4,10 @@ import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faChrome } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import portfolioImg from '../assets/portfolio.jpg';
+import weatherImg from '../assets/weather.jpg';
+import taskImg from '../assets/task.jpg';
+import ecommerceImg from '../assets/ecommerce.jpg';
 import '../styles/Projects.css';
 
 const Projects = () => {
@@ -36,21 +40,20 @@ const Projects = () => {
       }
     }
   };
-
   const projects = [
     {
       title: "Modern Portfolio Website",
       description: "A responsive portfolio website built with React, featuring smooth animations, dynamic content loading, and modern design principles.",
       tags: ["React", "CSS3", "Responsive Design"],
-      image: "/assets/portfolio.jpg",
-      demoLink: "#",
-      githubLink: "#"
+      image: portfolioImg,
+      demoLink: "https://CodeIsFun4Me.github.io/Portfolio",
+      githubLink: "https://github.com/CodeIsFun4Me/Portfolio"
     },
     {
       title: "Weather Dashboard",
       description: "A weather application that provides real-time weather data, forecasts, and interactive maps using the OpenWeather API.",
       tags: ["React", "API Integration", "JavaScript"],
-      image: "/assets/weather.jpg",
+      image: weatherImg,
       demoLink: "https://github.com/CodeIsFun4Me/weather-dashboard",
       githubLink: "https://github.com/CodeIsFun4Me/weather-dashboard"
     },
@@ -58,7 +61,7 @@ const Projects = () => {
       title: "Task Manager",
       description: "A clean and intuitive task management application with features like drag-and-drop, filtering, and local storage persistence.",
       tags: ["React", "Local Storage", "CSS Grid"],
-      image: "/assets/task.jpg",
+      image: taskImg,
       demoLink: "https://github.com/CodeIsFun4Me/task-manager",
       githubLink: "https://github.com/CodeIsFun4Me/task-manager"
     },
@@ -66,7 +69,7 @@ const Projects = () => {
       title: "E-commerce UI",
       description: "A modern e-commerce user interface with product filtering, cart functionality, and responsive design.",
       tags: ["React", "Context API", "Styled Components"],
-      image: "/assets/ecommerce.jpg",
+      image: ecommerceImg,
       demoLink: "https://github.com/CodeIsFun4Me/ecommerce-ui",
       githubLink: "https://github.com/CodeIsFun4Me/ecommerce-ui"
     }

@@ -188,33 +188,33 @@ const Contact = () => {
               />
             </motion.div>
 
-            <motion.button
-              type="submit"
-              className={`submit-button ${formStatus.isSubmitting ? 'submitting' : ''}`}
-              variants={itemVariants}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              disabled={formStatus.isSubmitting}
-            >
-              {formStatus.isSubmitting ? (
-                'Sending...'
-              ) : (
-                <>
-                  <FontAwesomeIcon icon={faPaperPlane} /> Send Message
-                </>
-              )}
-            </motion.button>
-
-            {formStatus.isSubmitted && (
-              <motion.div
-                className="success-message"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
+            <motion.div className="send-actions" variants={itemVariants} style={{display: 'flex', gap: '1rem', marginTop: '1rem', flexWrap: 'wrap'}}>
+              <a
+                className="submit-button whatsapp"
+                href={`https://wa.me/2348062155704?text=${encodeURIComponent(formData.message || 'Hello Timothy!')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{textDecoration: 'none'}}
               >
-                Message sent successfully!
-              </motion.div>
-            )}
+                <FontAwesomeIcon icon={["fab", "whatsapp"]} /> WhatsApp
+              </a>
+              <a
+                className="submit-button telegram"
+                href={`https://t.me/+2348062155704`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{textDecoration: 'none'}}
+              >
+                <FontAwesomeIcon icon={["fab", "telegram"]} /> Telegram
+              </a>
+              <a
+                className="submit-button sms"
+                href={`sms:+2348062155704?body=${encodeURIComponent(formData.message || 'Hello Timothy!')}`}
+                style={{textDecoration: 'none'}}
+              >
+                <FontAwesomeIcon icon={faPhone} /> SMS
+              </a>
+            </motion.div>
 
             {formStatus.error && (
               <motion.div

@@ -22,7 +22,9 @@
 }
 
 .app {
+  width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -32,7 +34,32 @@
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem 0.2rem;
+  }
+  .app {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem 0.1rem;
+  }
+  .app {
+    padding-bottom: 1rem;
+  }
 }
 
 /* Animation classes */

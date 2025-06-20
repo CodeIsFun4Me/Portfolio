@@ -134,3 +134,18 @@ nav {
     gap: 1rem;
   }
 }
+
+@media (max-width: 600px) {
+  .header-content h2 {
+    font-size: 1.5rem;
+  }
+  .header-content {
+    padding: 0 0.5rem;
+  }
+  .logo h1 {
+    font-size: 1.1rem;
+  }
+  .nav-links {
+    gap: 0.7rem;
+  }
+}

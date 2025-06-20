@@ -133,6 +133,22 @@
   }
 }
 
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    padding: 2rem 0.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-text p {
+    font-size: 0.98rem;
+  }
+}
+
 [data-theme='dark'] .skill-category {
   background: var(--card-bg-dark);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);

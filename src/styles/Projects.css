@@ -206,6 +206,24 @@
   }
 }
 
+@media (max-width: 480px) {
+  .projects {
+    padding: 2rem 0.2rem;
+  }
+  .project-image {
+    height: 120px;
+  }
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+  .project-info p {
+    font-size: 0.95rem;
+  }
+  .project-tags {
+    gap: 0.3rem;
+  }
+}
+
 /* Animation classes */
 .fade-up {
   opacity: 0;

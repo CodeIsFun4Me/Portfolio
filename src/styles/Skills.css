@@ -171,3 +171,18 @@
     font-size: 1.3rem;
   }
 }
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 2rem 0.5rem;
+  }
+  .skills h2 {
+    font-size: 1.2rem;
+  }
+  .skill-category {
+    padding: 1rem;
+  }
+  .category-header h3 {
+    font-size: 1rem;
+  }
+}
